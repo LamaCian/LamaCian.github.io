@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Paunovic Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg-image {
+            background-image: url('images/background.jpg');
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .enter-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navbar {
+            background-color: transparent !important;
+            border: none;
+        }
+        .navbar-dark .navbar-brand, .navbar-dark .navbar-nav .nav-link {
+            color: gray !important; /* Change color to gray for all nav items */
+        }
+    </style>
+    
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="javascript:void(0)" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-image">
+    <div class="overlay">
+        <h1>Ana Paunovic</h1>
+        <p>Machine Learning Engineer</p>
+        <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" class="enter-btn">Learn more</button>
+    </div>
+</div>
+
+<section id="about" class="container text-center my-5">
+    <img src="images/about/me.jpg" alt="Profile Picture" class="profile-image mb-3">
+    <h1>Ana Paunovic</h1>
+    <p class="lead text-muted">ML engineer</p>
+   
+    <div class="about-text mt-4">
+        <p>I am currently juggling dual roles as a graduate student nearing the completion of my Master's thesis in Artificial Intelligence and as a full-time Machine Learning Engineer at BML. My academic and professional journeys are guided by a passion for developing cutting-edge machine learning algorithms.</p>
+        <p>My technical interests are broad, spanning software design and development, artificial intelligence, machine learning, computer vision, and natural language processing. I am committed to leveraging these disciplines to foster innovative solutions in technology.</p>
+    </div>
+    
+
+    <div class="container text-center my-4">
+        <button onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});" class="btn btn-outline-primary">Skills</button>
+        <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'});" class="btn btn-outline-primary">Projects</button>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});" class="btn btn-outline-primary">Contact</button>
+        <button onclick="window.location.href='images/resume.pdf';" class="btn btn-outline-secondary">Resume</button>
+    </div>
+    <style>
+        .btn-outline-primary {
+    margin: 0 8px;
+    color: #333; /* Change color as needed */
+    border-color: #333; /* Change border color as needed */
+}
+
+.btn-outline-secondary {
+    margin: 0 8px;
+    color: #666; /* Darker for contrast */
+    border-color: #666;
+}
+</style>
+</section>
+
+<section id="skills" class="container text-center my-5">
+    <h2 class="mb-4">Skills</h2>
+    <style>
+        #skills {
+        background-color: #1a4f77; /* Lighter shade of blue */
+        color: #ffffff; /* White text for readability */
+        padding: 50px 0; /* Padding for better spacing */
+    }
+
+    .skill-icon {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%; /* Makes the div circular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .skill-icon img {
+        max-width: 60%; /* Limits image size within the circle */
+    }
+
+    .card {
+        background: transparent; /* Optional: make the card background transparent */
+        border: none;
+    }
+
+    .card-body {
+        padding-top: 20px; /* Spacing above the text in the card */
+    }
+    .container {
+    width: 100%; /* Ensures the container takes up full width */
+    max-width: 100%; /* Prevents any max-width restriction */
+    padding-right: 0; /* Removes right padding */
+    padding-left: 0; /* Removes left padding */
+}
+    </style>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="skill-icon">
+                    <img src="images/skills/1.png" alt="Python">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text"> Extensively applied Python in various machine learning domains including:
+                        Computer Vision (CV), Natural Language Processing (NLP), and Time Series Forecasting.
+                        Developed predictive models and automated data processing pipelines.
+                 </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="skill-icon">
+                    <img src="images/skills/mpnet.png" alt="Machine Learning Icon">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Machine Learning, Artificial Intelligence</h5>
+                    <p class="card-text">  Engaged in numerous projects leveraging ML and AI, focusing on both research
+                        and practical application development across diverse data sets and use cases.
+               </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="skill-icon">
+                    <img src="images/skills/sql-5.png" alt="SQL">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">SQL</h5>
+                    <p class="card-text"> Utilized SQL and SQLAlchemy extensively as an ORM tool for database interactions,
+                        predominantly with PostgreSQL. Skilled in crafting complex queries and optimizing
+                        database operations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="container text-center my-5">
+    <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center cards contents */
+            height: 100%;
+        }
+        .card-img-top {
+            width: 100%; /* Full width of the card */
+            height: 100px; /* Fixed height for all images */
+            object-fit: contain; /* Cover the whole area without distorting */
+        }
+
+        .card-title {
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 0.9rem; /* Adjust font size for aesthetics */
+        }
+    </style>
+
+
+    <h2 class="mb-4">Personal Projects</h2>
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <a href="https://github.com/LamaCian/MPNet">
+                    <img src="images/projects/mpnet2.png" class="card-img-top" alt="MPNet">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">MPNet</h5>
+                    <p class="card-text">Recreation of MPNet model using pure python</p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <a href="https://github.com/LamaCian/Classification-of-Cardiac-Arrhythmias-Patients-">
+                    <img src="images/projects/aritmija.png" class="card-img-top" alt="Arrhythmias">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Arrhythmias</h5>
+                    <p class="card-text">Classification of Cardiac Arrhythmias Patients using various ML algorithms</p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <a href="https://github.com/LamaCian/Federated-learning">
+                    <img src="images/projects/federated_learning.jpg" class="card-img-top" alt="Federated Learning">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Federated Learning</h5>
+                    <p class="card-text">Comparison of FL and standard ML in medicine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Project 4 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <a href="https://github.com/LamaCian/Rain-prediction-in-Australia">
+
+                <img src="images/projects/rain3.png" class="card-img-top" alt="Rain Prediction"> </a>
+                <div class="card-body">
+                    <h5 class="card-title">Rain Prediction</h5>
+                    <p class="card-text">Rain prediction using various ML algorithms</p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <a href="https://github.com/LamaCian/Lego_Mindstorm">
+
+                <img src="images/projects/lego.png" class="card-img-top" alt="Lego Mindstorm"> </a>
+                <div class="card-body">
+                    <h5 class="card-title">Lego Mindstorm</h5>
+                    <p class="card-text">
+                        Implemented A* algorithm for optimized robot movement with heuristics, integrated Kalman filter for real-time motion correction, and trained the robot for color detection and precise angle rotation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <a href="https://github.com/LamaCian/Bsc-stereo-vision">
+
+                <img src="images/projects/robot.png" class="card-img-top" alt="Stereo Vision"> </a>
+                <div class="card-body">
+                    <h5 class="card-title">Stereo Vision</h5>
+                    <p class="card-text">
+                        Developed a stereo vision system for the classification of mechanical components, enhancing automation accuracy in industrial settings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contact" class="text-center my-5">
+        <h2 class="mb-4">Contact Me</h2>
+        <p>
+            <i class="fa fa-phone" aria-hidden="true"></i> +381 658 287 998
+        </p>
+        <div class="my-4">
+            <a href="https://www.linkedin.com/in/ana-paunovi%C4%87-479ab7212/" target="_blank" class="btn icon-btn mx-2" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                <img src="images/icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/LamaCian" target="_blank" class="btn icon-btn mx-2" data-toggle="tooltip" data-placement="top" title="GitHub">
+                <img src="images/icons/github.png" alt="GitHub">
+            </a>
+            <a href="mailto:apaunovic19@gmail.com" class="btn icon-btn mx-2" data-toggle="tooltip" data-placement="top" title="Gmail">
+                <img src="images/icons/Gmail_Logo_512px.png" alt="Gmail">
+            </a>
+
+            <style>
+
+#contact {
+        background-color: #1a4f77; /* Lighter shade of blue */
+        color: #ffffff; /* White text for readability */
+        padding: 50px 0; /* Padding for better spacing */
+    }
+                .icon-btn {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.icon-btn img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-btn:hover {
+    background-color: #00213a; /* Lighter shade of blue */
+        color: #ffffff; /* White text for readability */}
+
+/* Tooltip styling */
+.tooltip-inner {
+    background-color: #555; /* Dark tooltip background */
+    color: #fff; /* White text color */
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: #555; /* Arrow color matches tooltip background */
+}
+
+            </style>
+        </div>
+    </section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.5/dist/umd/popper.min.js"></script>
+
+
+
+<script>
+    $(document).ready(function(){
+        $("a.nav-link").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800);
+            }
+        });
+    });
+
+    $(document).ready(function(){
+        // Handle click on "Enter Portfolio" button
+        $('.enter-btn').click(function(){
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 1000);
+        });
+
+        // Handle click on "Skills" link in the "About" section
+        $('a[href="#skills"]').click(function(event) {
+            event.preventDefault(); // Prevent the default anchor click behavior
+            var sectionOffset = $("#skills").offset().top; // Get the offset top of the "Skills" section
+            $('html, body').animate({
+                scrollTop: sectionOffset
+            }, 1000);
+        });
+
+        // Handle click on "Projects" link in the "About" section
+        $('a[href="#projects"]').click(function(event) {
+            event.preventDefault(); // Prevent the default anchor click behavior
+            var sectionOffset = $("#projects").offset().top; // Get the offset top of the "Projects" section
+            $('html, body').animate({
+                scrollTop: sectionOffset
+            }, 1000);
+        });
+    });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip(); // Initializes all tooltips
+    });
+</script>
+</body>
+</html>
